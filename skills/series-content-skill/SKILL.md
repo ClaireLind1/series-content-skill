@@ -1,87 +1,51 @@
 ---
 name: series-content-skill
 description: >-
-  Turn user-selected English dialogue, expressions, viewing notes, or questions from a TV or film
-  into contextual explanations, language-learning articles, and WeChat-ready HTML. Use for
-  planning, terminology notes, drafting, reviewing, or requested learning extras.
+  将用户选出的剧集或影视英语台词、表达、观剧笔记和疑问，整理为语境讲解、语言学习文章与微信公众号 HTML。适用于词条整理、选题规划、文章撰写或续写、内容审校及用户明确要求的配套学习材料。
 ---
 
-# Series English Content Studio
+# 剧集英语内容工作台
 
-## Purpose
+## 目标与范围
 
-Help the user turn English material they selected while watching a series or film into clear,
-context-rich Chinese learning content and, when requested, a long-form article for a WeChat Official
-Account. The user decides what is worth organizing. Notes may be exact lines, approximate
-transcriptions, expressions, words, or questions; any format is acceptable. Do not imply that this
-Skill watches episodes, finds the user's unknown lines, or retrieves unprovided subtitles.
+帮助用户把自己选出的剧集或影视英语材料整理成清晰、结合语境的中文学习内容；只有用户提出要求时，才进一步写成文章或公众号 HTML。由用户决定哪些内容值得整理。输入可以是准确台词、听写大意、表达、单词或问题，格式不限。
 
-For each selected item, explain its meaning in context and add useful terminology, pronunciation,
-collocations, Chinese explanations, or original teaching examples as appropriate. Organize reviewed
-material into an outline or article only when requested. Generate WeChat HTML with a “Copy formatted
-content” button when the project includes a suitable renderer. Quizzes and answer keys are optional
-extras, never default deliverables.
+不要声称本 Skill 能自动观看剧集、发现用户没有提供的台词，或获取未提供的字幕。不要把听写大意或转述改写成已核实的原句。
 
-## This repository's example
+## 任务模式
 
-The repository demonstrates the workflow with *The Pitt*, a medical drama. Its sample article,
-medical terminology, data, and renderer are examples for that series; do not reuse them as facts or
-assume another show is medical. For a different series, work from the user's material and adapt the
-examples only as a structural or visual reference.
+- **整理选出的内容：**逐条解释用户提供的表达在具体场景中的意思；按需补充术语、缩写、发音、搭配、中文说明或原创教学例句。
+- **规划：**提供选题角度、必要背景、内容结构、适合讲解的表达和待核实项。用户只要规划时，不扩写成完整文章。
+- **撰写或续写：**围绕用户确认的主题和读者，组织开篇、分节讲解、例句和结尾。区分剧中原句、转述和原创例句。
+- **审校：**检查语境、术语、翻译、引用、文章顺序和系列一致性。用户只要求校对时，尽量保留结构与表达。
+- **配套学习材料：**只在用户提出要求时制作小测或答案解析，不作为默认交付。
 
-Useful files in this repository:
+## 本仓库的示例
 
-- `examples/pitt_t07_layout.py` — The Pitt sample's article layout and Markdown/HTML helpers.
-- `examples/pitt_ep1_17_data.py` and `examples/pitt_ep1_10_data.py` — sample article data.
-- `examples/build-the-pitt-ep1-10-html.py` — sample article builder.
-- `examples/the-pitt-ep1-terminology-9.html` — rendered article example.
-- Root `AGENTS.md` — project rules, including boundaries for using the sample assets.
+本仓库用医疗剧《匹兹堡医护前线》（The Pitt）展示工作流。示例文章、医学术语、数据和生成器只代表该剧案例；处理其他剧集时，应从用户提供的材料出发，只把示例当作结构或视觉参考，不得假设其他剧集也属于医疗题材。
 
-## Modes
+- `examples/pitt_t07_layout.py`：案例文章的版式和 Markdown/HTML 辅助函数。
+- `examples/pitt_ep1_17_data.py`、`examples/pitt_ep1_10_data.py`：案例文章数据。
+- `examples/build-the-pitt-ep1-10-html.py`：案例 HTML 生成脚本。
+- `examples/the-pitt-ep1-terminology-9.html`：实际文章 HTML 样例。
 
-- **Plan:** return a topic angle, context to establish, outline, useful language to explain, and items
-  needing verification. Do not expand a plan into a full article unless asked.
-- **Explain selected material:** handle the user's chosen notes one by one. Keep approximate wording
-  marked as uncertain; do not silently convert it into a verified quote.
-- **Draft or continue an article:** organize the approved explanations around a clear theme and the
-  requested audience. Keep source dialogue, paraphrase, and original teaching examples distinct.
-- **Review:** check context, terms, translation, quotations, flow, and series consistency. Preserve
-  structure and wording when the user asks only for proofreading.
-- **Make extras:** create only the quiz or answer explanation the user requested.
+## 公众号交付
 
-## WeChat delivery
+如果交付文章 HTML，说明用户可以打开文件并点击「复制排版内容」，然后登录 `https://mp.weixin.qq.com/`，新建图文并粘贴正文。标题、作者、摘要和封面等图文信息需在后台分别填写；预览后可保存草稿，准备好时再发布。
 
-When the output includes article HTML, explain this workflow:
+正文复制不会自动填写图文信息或上传图片。此工作流不需要公众号 API、开发者密钥或第三方排版插件。仅当项目包含可用的渲染器时才交付 HTML。
 
-1. Open the HTML and click “Copy formatted content.”
-2. Sign in at `https://mp.weixin.qq.com/`.
-3. Create a new article and paste into the body editor.
-4. Fill in the title, author, summary, and cover separately.
-5. Preview, save as a draft, and publish from the Official Account backend when ready.
+## 准确性要求
 
-Copying the body does not fill in article metadata or upload a cover. Do not ask the user to configure
-an API, developer key, or third-party layout plugin for this copy-and-paste workflow.
+1. 逐字引用只能依据用户提供或可靠核实的材料。清楚标记听写大意、近似转录与转述；无法确认的内容标「待核实」。
+2. 结合场景和语体解释表达。只有对学习有帮助时才补充专业术语与领域背景。
+3. 需要事实准确的专业说明时，查证可靠来源。医疗内容仅作语言学习背景，不构成临床建议。
+4. 不编造剧情、台词或事实来填补信息缺口。
+5. 修改版式时保护用户已确认的正文内容，并说明尚未解决的核实项。
+6. 未实际在微信公众号编辑器中粘贴测试，不得宣称通过了粘贴或浅色/深色模式验证。
 
-Read [the editorial workflow](references/editorial-workflow.md) for detailed guidance. When working
-on The Pitt samples in this repository, follow root `AGENTS.md`; for other shows, use its constraints
-only where they are genuinely general and never import show-specific facts or content.
+## 可能的交付物
 
-## Evidence and accuracy
+根据用户的要求，交付逐条讲解清单、提纲、Markdown 文章、公众号 HTML、审校意见或用户指定的配套学习材料。只有项目流程确实需要时，才附可再次生成成品的脚本和数据文件。
 
-1. Use only user-provided or reliably verified dialogue as a verbatim quote. Label paraphrases and
-   approximate transcriptions accurately; mark unresolved wording “待核实”.
-2. Explain expressions in their scene and register. Add terminology and domain context only when it
-   helps the learner.
-3. Verify factual claims in specialized domains against reliable sources when needed. Medical
-   explanations are educational context, not clinical guidance.
-4. Do not invent plot, dialogue, or facts to bridge gaps.
-5. Protect approved content when editing layout. State unresolved checks and delivery status clearly.
-6. Do not claim WeChat editor paste validation without actually testing the paste.
-
-## Typical deliverables
-
-Depending on the user's request: a selected-expression list with explanations; an outline; an article
-in Markdown; WeChat-ready HTML; a review with verification notes; or requested derivative material.
-For a complete article, include a scene-setting opening, organized explanations, useful examples, and
-an ending appropriate to the user's series. Include a regenerable builder and content data only when
-the project workflow calls for them.
+需要具体编辑流程时，阅读 [中文编辑流程](references/editorial-workflow.md)。处理本仓库 The Pitt 案例时遵循根目录 `AGENTS.md`；处理其他剧集时，只沿用确实通用的规则。
