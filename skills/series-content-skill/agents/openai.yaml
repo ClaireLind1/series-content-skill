@@ -1,0 +1,6 @@
+interface:
+  display_name: "剧集英语内容工作台"
+  short_description: "整理剧集英语笔记，生成学习文章与公众号 HTML"
+  default_prompt: "整理我选出的剧集英语表达，解释语境和用法；需要时写成文章并生成公众号 HTML。"
+policy:
+  allow_implicit_invocation: true
