@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>我把看剧笔记，做成了一个能生成公众号文章的 AI Skill</title>
+  <style>
+    body { margin: 0; padding: 28px 12px 64px; background: #EBF0EB; background-image: linear-gradient(150deg,#C9E5ED,#F4E9C8 65%,#EAF1E6); font-family: -apple-system, BlinkMacSystemFont, 'PingFang SC', 'Helvetica Neue', 'Microsoft YaHei', sans-serif; }
+    .page { max-width: 680px; margin: 0 auto; }
+    .toolbar { text-align: center; margin-bottom: 20px; }
+    .toolbar button { background: #5C5348; color: #FAF6EC; border: none; border-radius: 980px; padding: 12px 28px; font-size: 15px; cursor: pointer; font-family: inherit; }
+    .toolbar p { font-size: 13px; color: #6B6560; margin-top: 10px; line-height: 1.6; }
+  </style>
+</head>
+<body>
+<div class="page">
+  <div class="toolbar">
+    <button type="button" onclick="copyContent()">复制排版内容</button>
+    <p>公众号推广文章 · 点击复制后粘贴到公众号正文</p>
+  </div>
+  <div id="copy-target">
+<section style="margin:0 auto;max-width:680px;background:#EAF1E6;background-color:#EAF1E6;background-image:linear-gradient(180deg,#B8DBE9 0%,#D5ECEC 9%,#F4E6B1 19%,#F5EFD9 29%,#EAF1E6 43%,#F8EDC6 58%,#E7EDF0 74%,#F2E9DA 88%,#FAF8EF 100%);">
+<!-- 开篇 -->
+<section style="margin:0;padding:28px 22px 12px;font-family:-apple-system, BlinkMacSystemFont, 'PingFang SC', 'Helvetica Neue', 'Microsoft YaHei', sans-serif;background:transparent;background-color:transparent;background-image:none;">
+  <section style="margin:0;padding:28px 22px;border-radius:12px;border:1px solid #8CA6A6;background:#FBF9F3;background-color:#FBF9F3;">
+    <p style="margin:0 0 8px;font-size:12px;letter-spacing:1px;color:#888888;">SERIES-CONTENT-SKILL · 项目介绍</p>
+    <p style="margin:0 0 16px;font-size:22px;font-weight:700;line-height:1.4;color:#383838;">我把看剧笔记，做成了一个能生成公众号文章的 AI Skill</p>
+    <section style="margin:0;padding:18px 0 0;border-radius:0;background:#FBF9F3;background-color:#FBF9F3;border:0;border-top:1px solid #BFCBC5;"><p style="margin:0 0 10px;font-size:14px;letter-spacing:1px;color:#567B80;">前言</p><p style="margin:0 0 12px;font-size:15px;line-height:1.9;color:#383838;text-align:left;">写《匹兹堡医护前线》（The Pitt）系列时，我会在看剧时记下英文台词、表达和疑问，之后再查语境和术语、解释表达、组织文章并处理公众号排版。</p><p style="margin:0;font-size:15px;line-height:1.9;color:#383838;text-align:left;">我把这套实际使用的流程整理成开源 Agent Skill：<strong>series-content-skill</strong>。它不是独立软件，而是一套可安装到 Codex、Claude Code 或 Cursor 等 AI Agent 的工作指令：你提供笔记和要求，AI 按流程帮你整理、写作或审校。项目已发布在 GitHub，可下载，也可以按需修改。</p></section>
+  </section>
+</section>
+<section style="margin:0;padding:12px 22px 12px;font-family:-apple-system, BlinkMacSystemFont, 'PingFang SC', 'Helvetica Neue', 'Microsoft YaHei', sans-serif;background:transparent;background-color:transparent;background-image:none;"><section style="margin:0;padding:0 4px 8px;border:0;background:transparent;background-color:transparent;background-image:none;"><section style="margin:12px 0 28px;padding:0;font-family:-apple-system, BlinkMacSystemFont, 'PingFang SC', 'Helvetica Neue', 'Microsoft YaHei', sans-serif;">
+    <p style="margin:0 0 14px;padding:0 0 9px;border-bottom:2px solid #6C8E89;font-size:19px;font-weight:700;line-height:1.5;color:#383838;">从你记下的内容开始</p>
+    <p style="margin:0 0 12px;font-size:15px;line-height:1.9;color:#383838;text-align:left;">这一步由你来决定。可以记下没听懂的台词，也可以是觉得值得学的表达、一个术语、一句听到的大意，或者一个想弄明白的问题。格式不用统一；有原句就给原句，只有听写或大意，也可以注明目前不确定。</p><p style="margin:0;font-size:15px;line-height:1.9;color:#383838;text-align:left;">它不会自动观看整集、替你挑台词，也不会把听不清的内容补成确定的原话。素材由你选择，拿不准的部分会标出来供你核对。</p>
+</section>
+<section style="margin:12px 0 28px;padding:0;font-family:-apple-system, BlinkMacSystemFont, 'PingFang SC', 'Helvetica Neue', 'Microsoft YaHei', sans-serif;">
+    <p style="margin:0 0 14px;padding:0 0 9px;border-bottom:2px solid #6C8E89;font-size:19px;font-weight:700;line-height:1.5;color:#383838;">这个 Skill 能帮你做什么</p>
+    <p style="margin:0 0 10px;padding-left:1em;text-indent:-1em;font-size:14px;line-height:1.8;color:#383838;text-align:left;"><strong style="color:#567B80;">• 逐条整理笔记：</strong>结合你提供的台词、听写或问题解释场景含义；补充专业术语、缩写、发音、常见搭配、中文说明和教学例句。</p><p style="margin:0 0 10px;padding-left:1em;text-indent:-1em;font-size:14px;line-height:1.8;color:#383838;text-align:left;"><strong style="color:#567B80;">• 整理成文章：</strong>把已经核对过的内容按主题和阅读顺序组织起来；也可以只生成词条清单或文章提纲。</p><p style="margin:0 0 10px;padding-left:1em;text-indent:-1em;font-size:14px;line-height:1.8;color:#383838;text-align:left;"><strong style="color:#567B80;">• 检查和修改草稿：</strong>帮你检查术语、语境、翻译和结构，并按你的意见修订。</p><p style="margin:0;padding-left:1em;text-indent:-1em;font-size:14px;line-height:1.8;color:#383838;text-align:left;"><strong style="color:#567B80;">• 生成公众号排版稿：</strong>输出 Markdown；有可用的排版模板或生成器时，再生成可复制正文的 HTML。本项目附有 The Pitt 案例的版式脚本和 HTML 演示。</p><p style="margin:14px 0 0;font-size:15px;line-height:1.9;color:#383838;text-align:left;">原句、听写大意、转述和教学例句会区分处理；不能确认的内容标注待核实。你可以只要求其中一项，也可以从笔记整理一路做到公众号文章；需要排版 HTML 时，配合相应模板或生成器即可。</p>
+</section>
+<section style="margin:12px 0 28px;padding:0;font-family:-apple-system, BlinkMacSystemFont, 'PingFang SC', 'Helvetica Neue', 'Microsoft YaHei', sans-serif;">
+    <p style="margin:0 0 14px;padding:0 0 9px;border-bottom:2px solid #6C8E89;font-size:19px;font-weight:700;line-height:1.5;color:#383838;">从 HTML 到公众号文章</p>
+    <p style="margin:0 0 12px;font-size:15px;line-height:1.9;color:#383838;text-align:left;">在文章 HTML 中点击「复制排版内容」，粘贴到公众号后台新建图文的正文区，再填写标题、作者、摘要和封面。要让读者跳转 GitHub，把仓库地址设为图文的「阅读原文」链接。预览确认后，就可以保存草稿或发布。</p>
+</section>
+<section style="margin:12px 0 28px;padding:0;font-family:-apple-system, BlinkMacSystemFont, 'PingFang SC', 'Helvetica Neue', 'Microsoft YaHei', sans-serif;">
+    <p style="margin:0 0 14px;padding:0 0 9px;border-bottom:2px solid #6C8E89;font-size:19px;font-weight:700;line-height:1.5;color:#383838;">已发布的真实案例</p>
+    <p style="margin:0 0 12px;font-size:15px;line-height:1.9;color:#383838;text-align:left;">The Pitt 第一集的医学英语系列已经整理到 17 篇。下面是其中三篇已发布文章：</p><p style="margin:0 0 8px;font-size:15px;line-height:1.9;color:#383838;text-align:left;">• <a href="https://mp.weixin.qq.com/s?__biz=Mzg2ODY0MDQ0MQ==&mid=2247484003&idx=1&sn=322c6f034dba8d2993a80e43d62d8ca4&scene=21#wechat_redirect" style="color:#4A635C;text-decoration:underline;">第 1 篇｜开场与口语</a></p><p style="margin:0 0 8px;font-size:15px;line-height:1.9;color:#383838;text-align:left;">• <a href="https://mp.weixin.qq.com/s?__biz=Mzg2ODY0MDQ0MQ==&mid=2247484137&idx=1&sn=adc7593300449d60e0ca8bd060d6fa24&scene=21#wechat_redirect" style="color:#4A635C;text-decoration:underline;">第 9 篇｜鉴别诊断与收治</a></p><p style="margin:0;font-size:15px;line-height:1.9;color:#383838;text-align:left;">• <a href="https://mp.weixin.qq.com/s?__biz=Mzg2ODY0MDQ0MQ==&mid=2247484211&idx=1&sn=ace509093aa2d55a8ba42343a0923f20&scene=21#wechat_redirect" style="color:#4A635C;text-decoration:underline;">第 17 篇｜呕吐与误食</a></p><p style="margin:14px 0 0;font-size:15px;line-height:1.9;color:#383838;text-align:left;">这个 Skill 叫 <strong>series-content-skill</strong>，The Pitt 是它的真实案例，不是唯一题材。其他剧集或影视作品中，你自己挑出的英文表达、听写、疑问和笔记，也可以用同样的流程整理、成文、审稿或排版。</p>
+</section>
+<section style="margin:12px 0 28px;padding:0;font-family:-apple-system, BlinkMacSystemFont, 'PingFang SC', 'Helvetica Neue', 'Microsoft YaHei', sans-serif;">
+    <p style="margin:0 0 14px;padding:0 0 9px;border-bottom:2px solid #6C8E89;font-size:19px;font-weight:700;line-height:1.5;color:#383838;">去 GitHub 看看</p>
+    <p style="margin:0 0 12px;font-size:15px;line-height:1.9;color:#383838;text-align:left;">项目仓库里有中文和英文的 Skill 指令、完整工作流、真实文章 HTML 演示，以及下载和安装说明。本文末尾的「阅读原文」会链接到 GitHub 项目主页，进入后可按 README 的步骤下载并安装。</p><section style="margin:14px 0 0;padding:16px;border-radius:12px;border:1px solid #B6C8BC;background:#EAF1E6;background-color:#EAF1E6;text-align:center;"><p style="margin:0 0 5px;font-size:13px;line-height:1.6;color:#666666;text-align:center;">项目开源 · 可下载、可修改</p><p style="margin:0;font-size:16px;line-height:1.8;font-weight:700;text-align:center;color:#4A635C;">GitHub 项目：ClaireLind1/series-content-skill</p></section><section style="margin:18px 0 0;padding:12px 14px;border-left:2px solid #6C8E89;background:#F2E9DA;background-color:#F2E9DA;"><p style="margin:0;font-size:14px;line-height:1.8;color:#5B5B55;text-align:left;">后续我也会在公众号分享看剧学英语的内容，以及 AI 工具和实践；感兴趣的话，欢迎关注交流。</p></section>
+</section></section></section></section>
+  </div>
+  
+</div>
+
+<script>
+function wechatSafeHtml(html) {
+  html = html.replace(/<!--[\s\S]*?-->/g, '');
+  html = html.replace(/>\s+</g, '><');
+  html = html.replace(/<p\b/gi, '<section');
+  html = html.replace(/<\/p>/gi, '</section>');
+  return html;
+}
+function copyContent() {
+  var target = document.getElementById('copy-target');
+  var tail = document.getElementById('copy-target-tail');
+  var html = wechatSafeHtml(target.innerHTML + (tail ? tail.innerHTML : ''));
+  var holder = document.createElement('div');
+  holder.innerHTML = html;
+  var plain = holder.innerText.replace(/\n{2,}/g, '\n');
+  if (navigator.clipboard && window.ClipboardItem) {
+    var blob = new Blob([html], { type: 'text/html' });
+    var plainBlob = new Blob([plain], { type: 'text/plain' });
+    navigator.clipboard.write([new ClipboardItem({ 'text/html': blob, 'text/plain': plainBlob })])
+      .then(function () { alert('已复制，可粘贴到公众号编辑器'); })
+      .catch(function () { fallbackCopy(holder); });
+  } else {
+    fallbackCopy(holder);
+  }
+}
+function fallbackCopy(el) {
+  var range = document.createRange();
+  range.selectNodeContents(el);
+  var sel = window.getSelection();
+  sel.removeAllRanges();
+  sel.addRange(range);
+  try { document.execCommand('copy'); alert('已复制'); } catch (e) { alert('复制失败，请手动选择'); }
+  sel.removeAllRanges();
+}
+</script>
+
+</body>
+</html>
+
