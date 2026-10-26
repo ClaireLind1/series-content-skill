@@ -1,4 +1,4 @@
-# 从台词清单，到公众号文章
+# 从看剧笔记，到公众号文章
 
 一个把你记下的剧集英语台词、表达和疑问，整理成讲解内容与公众号文章的 Agent Skill。下面以《匹兹堡医护前线》（The Pitt）系列为实际案例。
 
@@ -12,9 +12,12 @@
 
 ## 公众号文章预览
 
-这是实际文章 HTML 的渲染效果。点击图片可打开完整网页，滚动查看文章排版和系列案例。
+展示页使用响应式 Grid 并排展示两篇真实 HTML：The Pitt 系列样文与本项目推广文章。桌面端并排浏览，手机端自动切换为单列；每篇都可以在框内滚动预览，也可以单独打开。
 
 [![公众号文章 HTML 实际排版预览](assets/article-preview.png)](https://clairelind1.github.io/series-content-skill/skills/series-content-skill/showcase.html)
+
+- [打开 Grid 文章预览页](https://clairelind1.github.io/series-content-skill/skills/series-content-skill/showcase.html)
+- [单独预览项目推广文章](https://clairelind1.github.io/series-content-skill/examples/series-content-skill-intro.html)
 
 ## 已发布文章精选
 
@@ -82,3 +85,4 @@ skills/
 ### 本地查看网页演示
 
 在解压后的仓库根目录运行 `python -m http.server 8000`，再打开 `http://localhost:8000/skills/series-content-skill/showcase.html`。
+
