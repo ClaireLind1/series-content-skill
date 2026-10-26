@@ -12,9 +12,12 @@ An Agent Skill that turns English dialogue, expressions, and questions you note 
 
 ## Article preview
 
-This image is rendered from the actual article HTML. Click it to open the full webpage and browse the layout and series examples.
+The showcase uses a responsive CSS Grid to display two real HTML articles side by side: a The Pitt series sample and this project-introduction article. The layout switches to a single column on mobile. Each preview is scrollable and can also be opened on its own.
 
 [![Rendered WeChat article HTML preview](assets/article-preview.png)](https://clairelind1.github.io/series-content-skill/skills/series-content-skill/showcase.html)
+
+- [Open the Grid article preview](https://clairelind1.github.io/series-content-skill/skills/series-content-skill/showcase.html)
+- [Open the project-introduction article](https://clairelind1.github.io/series-content-skill/examples/series-content-skill-intro.html)
 
 ## Published articles
 
@@ -82,3 +85,4 @@ The Skill works from the material you provide. Keep the full repository if you a
 ### Preview the web demo locally
 
 From the extracted repository root, run `python -m http.server 8000` and open `http://localhost:8000/skills/series-content-skill/showcase.html`.
+
