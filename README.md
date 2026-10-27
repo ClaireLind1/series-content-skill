@@ -12,9 +12,14 @@
 
 ## 公众号文章预览
 
-展示页使用响应式 Grid 并排展示两篇真实 HTML：The Pitt 系列样文与本项目推广文章。桌面端并排浏览，手机端自动切换为单列；每篇都可以在框内滚动预览，也可以单独打开。
+展示页使用响应式 Grid 并排展示两篇真实 HTML：The Pitt 系列样文与本项目推广文章。桌面端并排浏览，手机端自动切换为单列；每篇都可以在框内滚动预览，也可以单独打开。下面两张图分别展示第九篇的开篇导览和词条讲解。
 
-[![公众号文章 HTML 实际排版预览](assets/article-preview.png)](https://clairelind1.github.io/series-content-skill/skills/series-content-skill/showcase.html)
+<table>
+  <tr>
+    <td width="50%"><a href="https://clairelind1.github.io/series-content-skill/skills/series-content-skill/showcase.html"><img src="assets/article-preview-opening.png" alt="公众号文章预览：开篇与篇章导览"></a><br><sub>开篇导览 · 文章结构与场景介绍</sub></td>
+    <td width="50%"><a href="https://clairelind1.github.io/series-content-skill/skills/series-content-skill/showcase.html"><img src="assets/article-preview-terms.png" alt="公众号文章预览：医学英语词条讲解"></a><br><sub>词条讲解 · 英文表达、中文释义与版式</sub></td>
+  </tr>
+</table>
 
 - [打开 Grid 文章预览页](https://clairelind1.github.io/series-content-skill/skills/series-content-skill/showcase.html)
 - [单独预览项目推广文章](https://clairelind1.github.io/series-content-skill/examples/series-content-skill-intro.html)
