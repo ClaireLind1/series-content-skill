@@ -12,12 +12,12 @@
 
 ## 公众号文章预览
 
-展示页使用响应式 Grid 并排展示两篇真实 HTML：The Pitt 系列样文与本项目推广文章。桌面端并排浏览，手机端自动切换为单列；每篇都可以在框内滚动预览，也可以单独打开。下面两张图分别展示第九篇的开篇导览和词条讲解。
+展示页使用响应式 Grid 并排展示第 24 篇《急诊沟通与疼痛评估》和本项目推广文章。桌面端并排浏览，手机端自动切换为单列；每篇都可以在框内滚动预览，也可以单独打开。下面两张图展示第 24 篇的文章封面与文中术语配图。
 
 <table>
   <tr>
-    <td width="50%"><a href="https://clairelind1.github.io/series-content-skill/skills/series-content-skill/showcase.html"><img src="assets/article-preview-opening.png" alt="公众号文章预览：开篇与篇章导览"></a><br><sub>开篇导览 · 文章结构与场景介绍</sub></td>
-    <td width="50%"><a href="https://clairelind1.github.io/series-content-skill/skills/series-content-skill/showcase.html"><img src="assets/article-preview-terms.png" alt="公众号文章预览：医学英语词条讲解"></a><br><sub>词条讲解 · 英文表达、中文释义与版式</sub></td>
+    <td width="50%"><a href="https://clairelind1.github.io/series-content-skill/skills/series-content-skill/showcase.html"><img src="assets/article-preview-24-cover.jpg" alt="第 24 篇公众号文章封面：急诊沟通与疼痛评估"></a><br><sub>第 24 篇 · 急诊沟通与疼痛评估</sub></td>
+    <td width="50%"><a href="https://clairelind1.github.io/series-content-skill/skills/series-content-skill/showcase.html"><img src="assets/article-preview-24-terminology.jpg" alt="第 24 篇医学英语配图：正常红细胞与镰状红细胞"></a><br><sub>文中配图 · 中英文术语说明</sub></td>
   </tr>
 </table>
 
@@ -90,4 +90,5 @@ skills/
 ### 本地查看网页演示
 
 在解压后的仓库根目录运行 `python -m http.server 8000`，再打开 `http://localhost:8000/skills/series-content-skill/showcase.html`。
+
 

@@ -12,9 +12,14 @@ An Agent Skill that turns English dialogue, expressions, and questions you note 
 
 ## Article preview
 
-The showcase uses a responsive CSS Grid to display two real HTML articles side by side: a The Pitt series sample and this project-introduction article. The layout switches to a single column on mobile. Each preview is scrollable and can also be opened on its own.
+The showcase uses a responsive CSS Grid to display the latest series sample, Article 24, alongside this project-introduction article. It switches to a single column on mobile. Both articles can be scrolled in place or opened separately. The images below show Article 24’s cover and an illustration from the article.
 
-[![Rendered WeChat article HTML preview](assets/article-preview.png)](https://clairelind1.github.io/series-content-skill/skills/series-content-skill/showcase.html)
+<table>
+  <tr>
+    <td width="50%"><a href="https://clairelind1.github.io/series-content-skill/skills/series-content-skill/showcase.html"><img src="assets/article-preview-24-cover.jpg" alt="Article 24 cover: Emergency communication and pain assessment"></a><br><sub>Article 24 · Emergency communication and pain assessment</sub></td>
+    <td width="50%"><a href="https://clairelind1.github.io/series-content-skill/skills/series-content-skill/showcase.html"><img src="assets/article-preview-24-terminology.jpg" alt="Article illustration: normal and sickle-shaped red blood cells"></a><br><sub>Illustration · Terminology in Chinese and English</sub></td>
+  </tr>
+</table>
 
 - [Open the Grid article preview](https://clairelind1.github.io/series-content-skill/skills/series-content-skill/showcase.html)
 - [Open the project-introduction article](https://clairelind1.github.io/series-content-skill/examples/series-content-skill-intro.html)
