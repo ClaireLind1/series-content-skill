@@ -12,12 +12,12 @@ An Agent Skill that turns English dialogue, expressions, and questions you note 
 
 ## Article preview
 
-The showcase uses a responsive CSS Grid to display the latest series sample, Article 24, alongside this project-introduction article. It switches to a single column on mobile. Both articles can be scrolled in place or opened separately. The images below show Article 24’s cover and an illustration from the article.
+The original Article 9 demo remains unchanged. The showcase adds the newly published Article 24 on the right, showing two real article styles side by side. Article 24 uses a sky-blue, cream-yellow palette with a paper-like feel; scroll its preview or open the official WeChat article.
 
 <table>
   <tr>
-    <td width="50%"><a href="https://clairelind1.github.io/series-content-skill/skills/series-content-skill/showcase.html"><img src="assets/article-preview-24-cover.jpg" alt="Article 24 cover: Emergency communication and pain assessment"></a><br><sub>Article 24 · Emergency communication and pain assessment</sub></td>
-    <td width="50%"><a href="https://clairelind1.github.io/series-content-skill/skills/series-content-skill/showcase.html"><img src="assets/article-preview-24-terminology.jpg" alt="Article illustration: normal and sickle-shaped red blood cells"></a><br><sub>Illustration · Terminology in Chinese and English</sub></td>
+    <td width="50%"><a href="https://clairelind1.github.io/series-content-skill/skills/series-content-skill/showcase.html"><img src="assets/article-preview.png" alt="Original Article 9 WeChat layout demo"></a><br><sub>Original demo · Article 9</sub></td>
+    <td width="50%"><a href="https://mp.weixin.qq.com/s/H7EvFcSOqpcy-FROBv3iWg"><img src="assets/article-preview-24-cover.jpg" alt="Article 24 cover: Emergency communication and pain assessment"></a><br><sub>New style · Sky blue × cream yellow × paper texture</sub></td>
   </tr>
 </table>
 
@@ -29,6 +29,7 @@ The showcase uses a responsive CSS Grid to display the latest series sample, Art
 - [Article 1 | Opening and conversational English](https://mp.weixin.qq.com/s?__biz=Mzg2ODY0MDQ0MQ==&mid=2247484003&idx=1&sn=322c6f034dba8d2993a80e43d62d8ca4&scene=21#wechat_redirect)
 - [Article 9 | Differential diagnosis and admission](https://mp.weixin.qq.com/s?__biz=Mzg2ODY0MDQ0MQ==&mid=2247484137&idx=1&sn=adc7593300449d60e0ca8bd060d6fa24&scene=21#wechat_redirect)
 - [Article 17 | Vomiting and accidental ingestion](https://mp.weixin.qq.com/s?__biz=Mzg2ODY0MDQ0MQ==&mid=2247484211&idx=1&sn=ace509093aa2d55a8ba42343a0923f20&scene=21#wechat_redirect)
+- [Article 24 | Emergency communication and pain assessment](https://mp.weixin.qq.com/s/H7EvFcSOqpcy-FROBv3iWg)
 
 ## From article to publication
 

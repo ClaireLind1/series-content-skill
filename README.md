@@ -12,12 +12,12 @@
 
 ## 公众号文章预览
 
-展示页使用响应式 Grid 并排展示第 24 篇《急诊沟通与疼痛评估》和本项目推广文章。桌面端并排浏览，手机端自动切换为单列；每篇都可以在框内滚动预览，也可以单独打开。下面两张图展示第 24 篇的文章封面与文中术语配图。
+展示页保留原有第九篇演示，并在右侧新增最新发布的第 24 篇《急诊沟通与疼痛评估》，并排呈现两种真实文章风格。第 24 篇采用「天空蓝 × 奶油黄 × 纸张感」样式，可在展示页滚动预览，也可直达公众号原文。
 
 <table>
   <tr>
-    <td width="50%"><a href="https://clairelind1.github.io/series-content-skill/skills/series-content-skill/showcase.html"><img src="assets/article-preview-24-cover.jpg" alt="第 24 篇公众号文章封面：急诊沟通与疼痛评估"></a><br><sub>第 24 篇 · 急诊沟通与疼痛评估</sub></td>
-    <td width="50%"><a href="https://clairelind1.github.io/series-content-skill/skills/series-content-skill/showcase.html"><img src="assets/article-preview-24-terminology.jpg" alt="第 24 篇医学英语配图：正常红细胞与镰状红细胞"></a><br><sub>文中配图 · 中英文术语说明</sub></td>
+    <td width="50%"><a href="https://clairelind1.github.io/series-content-skill/skills/series-content-skill/showcase.html"><img src="assets/article-preview.png" alt="原有演示版式：The Pitt 第一集第九篇文章预览"></a><br><sub>原有演示版 · 第一集第九篇</sub></td>
+    <td width="50%"><a href="https://mp.weixin.qq.com/s/H7EvFcSOqpcy-FROBv3iWg"><img src="assets/article-preview-24-cover.jpg" alt="第 24 篇文章封面：急诊沟通与疼痛评估"></a><br><sub>新增样式 · 天空蓝 × 奶油黄 × 纸张感</sub></td>
   </tr>
 </table>
 
@@ -29,6 +29,7 @@
 - [第 1 篇｜开场与口语](https://mp.weixin.qq.com/s?__biz=Mzg2ODY0MDQ0MQ==&mid=2247484003&idx=1&sn=322c6f034dba8d2993a80e43d62d8ca4&scene=21#wechat_redirect)
 - [第 9 篇｜鉴别诊断与收治](https://mp.weixin.qq.com/s?__biz=Mzg2ODY0MDQ0MQ==&mid=2247484137&idx=1&sn=adc7593300449d60e0ca8bd060d6fa24&scene=21#wechat_redirect)
 - [第 17 篇｜呕吐与误食](https://mp.weixin.qq.com/s?__biz=Mzg2ODY0MDQ0MQ==&mid=2247484211&idx=1&sn=ace509093aa2d55a8ba42343a0923f20&scene=21#wechat_redirect)
+- [第 24 篇｜急诊沟通与疼痛评估](https://mp.weixin.qq.com/s/H7EvFcSOqpcy-FROBv3iWg)
 
 ## 从文章到发布
 
