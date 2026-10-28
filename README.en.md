@@ -17,7 +17,7 @@ The original Article 9 demo remains unchanged. The showcase adds the newly publi
 <table>
   <tr>
     <td width="50%"><a href="https://clairelind1.github.io/series-content-skill/skills/series-content-skill/showcase.html"><img src="assets/article-preview.png" alt="Original Article 9 WeChat layout demo"></a><br><sub>Original demo · Article 9</sub></td>
-    <td width="50%"><a href="https://mp.weixin.qq.com/s/H7EvFcSOqpcy-FROBv3iWg"><img src="assets/article-preview-24-cover.jpg" alt="Article 24 cover: Emergency communication and pain assessment"></a><br><sub>New style · Sky blue × cream yellow × paper texture</sub></td>
+    <td width="50%"><a href="https://mp.weixin.qq.com/s/H7EvFcSOqpcy-FROBv3iWg"><img src="assets/article-preview-24-screenshot.png" alt="Article 24 body screenshot: sky blue, cream yellow, and paper-like layout"></a><br><sub>New style · Sky blue × cream yellow × paper texture</sub></td>
   </tr>
 </table>
 

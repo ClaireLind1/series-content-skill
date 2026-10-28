@@ -17,7 +17,7 @@
 <table>
   <tr>
     <td width="50%"><a href="https://clairelind1.github.io/series-content-skill/skills/series-content-skill/showcase.html"><img src="assets/article-preview.png" alt="原有演示版式：The Pitt 第一集第九篇文章预览"></a><br><sub>原有演示版 · 第一集第九篇</sub></td>
-    <td width="50%"><a href="https://mp.weixin.qq.com/s/H7EvFcSOqpcy-FROBv3iWg"><img src="assets/article-preview-24-cover.jpg" alt="第 24 篇文章封面：急诊沟通与疼痛评估"></a><br><sub>新增样式 · 天空蓝 × 奶油黄 × 纸张感</sub></td>
+    <td width="50%"><a href="https://mp.weixin.qq.com/s/H7EvFcSOqpcy-FROBv3iWg"><img src="assets/article-preview-24-screenshot.png" alt="第 24 篇公众号正文截图：天空蓝、奶油黄与纸张感排版"></a><br><sub>新增样式 · 天空蓝 × 奶油黄 × 纸张感</sub></td>
   </tr>
 </table>
 
