@@ -10,19 +10,19 @@
 - **组织文章内容：** 把逐条讲解整理成有主题和阅读顺序的系列文章；也可以只要词条清单、提纲或内容审校。
 - **生成公众号排版：** 输出 Markdown 和带「复制排版内容」按钮的 HTML，复制正文后即可粘贴到公众号图文编辑器。
 
-## 公众号文章预览
+## 公众号样式画廊
 
-展示页保留原有第九篇演示，并在右侧新增最新发布的第 24 篇《急诊沟通与疼痛评估》，并排呈现两种真实文章风格。第 24 篇采用「天空蓝 × 奶油黄 × 纸张感」样式，可在展示页滚动预览，也可直达公众号原文。
+**[打开交互式样式画廊 →](https://clairelind1.github.io/series-content-skill/skills/series-content-skill/showcase.html)**
 
-<table>
-  <tr>
-    <td width="50%"><a href="https://clairelind1.github.io/series-content-skill/skills/series-content-skill/showcase.html"><img src="assets/article-preview.png" alt="原有演示版式：The Pitt 第一集第九篇文章预览"></a><br><sub>原有演示版 · 第一集第九篇</sub></td>
-    <td width="50%"><a href="https://mp.weixin.qq.com/s/H7EvFcSOqpcy-FROBv3iWg"><img src="assets/article-preview-24-thumbnail.png" alt="第 24 篇公众号正文截图：天空蓝、奶油黄与纸张感排版"></a><br><sub>新增样式 · 天空蓝 × 奶油黄 × 纸张感</sub></td>
-  </tr>
-</table>
+桌面端切换「并排比较 / 横向浏览」，手机端左右滑动；每个样式都可滚动预览正文并打开完整 HTML。
 
-- [打开 Grid 文章预览页](https://clairelind1.github.io/series-content-skill/skills/series-content-skill/showcase.html)
-- [单独预览项目推广文章](https://clairelind1.github.io/series-content-skill/examples/series-content-skill-intro.html)
+| 样式 | 特点 | 入口 |
+| --- | --- | --- |
+| **01 · Clinical Editorial 精简版** | 当前默认 · 黑白蓝、留白、浅蓝例句竖线 | [预览与复制](https://clairelind1.github.io/series-content-skill/skills/series-content-skill/templates/clinical-editorial.html) |
+| 02 · 原有演示版 | 柔和纸色、词条卡片 | [完整预览](https://clairelind1.github.io/series-content-skill/examples/the-pitt-ep1-terminology-9.html) |
+| 03 · 天空蓝 × 奶油黄 | 渐变、纸张感 | [完整预览](https://clairelind1.github.io/series-content-skill/examples/the-pitt-ep2-7-stitch.html) |
+
+[查看精简版模板规则](skills/series-content-skill/references/clinical-editorial.md)。新模板尚待微信公众号浅色、深色粘贴实测。
 
 ## 已发布文章精选
 
