@@ -1,6 +1,6 @@
-# 从看剧笔记，到公众号文章
+# 从英语素材，到精读内容与公众号文章
 
-一个把你记下的剧集英语台词、表达和疑问，整理成讲解内容与公众号文章的 Agent Skill。下面以《匹兹堡医护前线》（The Pitt）系列为实际案例。
+一个把英语学习素材整理成精读讲解、学习笔记与公众号文章的 Agent Skill。可用于剧集台词、播客、访谈、演讲、文章摘录和课程笔记，按需补充词汇、发音、搭配、语境与参考资料。以下以《匹兹堡医护前线》（The Pitt）医学英语系列展示实际工作流。
 
 **[打开完整网页演示 →](https://clairelind1.github.io/series-content-skill/skills/series-content-skill/showcase.html)** · [查看给 AI 加载的 Skill 指令](skills/series-content-skill/SKILL.md) · [English](README.en.md)
 
@@ -11,6 +11,16 @@
 - **生成公众号排版：** 输出 Markdown 和带「复制排版内容」按钮的 HTML，复制正文后即可粘贴到公众号图文编辑器。
 
 ## 公众号样式画廊
+
+<table>
+<tr><th width="33%">01 · Clinical Editorial 精简版</th><th width="33%">02 · 原有演示版</th><th width="33%">03 · 天空蓝 × 奶油黄</th></tr>
+<tr>
+<td valign="top"><a href="https://clairelind1.github.io/series-content-skill/skills/series-content-skill/templates/clinical-editorial.html"><img src="assets/clinical-editorial-preview.png" alt="Clinical Editorial 精简版真实HTML预览" width="100%"></a></td>
+<td valign="top"><a href="https://clairelind1.github.io/series-content-skill/examples/the-pitt-ep1-terminology-9.html"><img src="assets/article-preview.png" alt="原有演示版正文预览" width="100%"></a></td>
+<td valign="top"><a href="https://clairelind1.github.io/series-content-skill/examples/the-pitt-ep2-7-stitch.html"><img src="assets/article-preview-24-thumbnail.png" alt="天空蓝奶油黄正文预览" width="100%"></a></td>
+</tr><tr><td>当前默认 · 黑白蓝 · 轻分隔</td><td>柔和纸色 · 词条卡片</td><td>渐变 · 纸张感</td></tr>
+</table>
+
 
 **[打开交互式样式画廊 →](https://clairelind1.github.io/series-content-skill/skills/series-content-skill/showcase.html)**
 
