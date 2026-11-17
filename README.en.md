@@ -1,39 +1,52 @@
-# From Dialogue Notes to WeChat Articles
+# Turn Rough Notes into Beautiful WeChat Articles
 
-An Agent Skill that turns English dialogue, expressions, and questions you note while watching a series into explanations and WeChat Official Account articles. The Pitt is the real case study featured here.
+An Agent Skill that organizes rough notes into publishable WeChat articles. Structure your ideas, polish the wording, choose a layout and generate HTML you can copy into the Official Account editor. Use it for reading notes, courses, work reflections, knowledge sharing and series writing.
 
-**[Open the full web demo →](https://clairelind1.github.io/series-content-skill/skills/series-content-skill/showcase.html)** · [Skill instructions](skills/series-content-skill/SKILL.en.md) · [中文介绍](README.md)
+[Browse layouts](https://clairelind1.github.io/series-content-skill/skills/series-content-skill/showcase.html) · [中文](README.md)
 
-## What it can do
-
-- **Explain your notes:** Clarify the lines, expressions, or questions you selected, adding context, terminology, abbreviations, pronunciation, Chinese meaning, and examples. Unverified details are flagged.
-- **Shape article content:** Organize explanations into themed series articles, or provide a glossary, outline, or editorial review.
-- **Format for WeChat:** Generate Markdown and HTML with a “Copy formatted content” button, ready to paste into the WeChat article editor.
-
-## Article preview
-
-The original Article 9 demo remains unchanged. The showcase adds the newly published Article 24 on the right, showing two real article styles side by side. Article 24 uses a sky-blue, cream-yellow palette with a paper-like feel; scroll its preview or open the official WeChat article.
+## Layout previews
 
 <table>
-  <tr>
-    <td width="50%"><a href="https://clairelind1.github.io/series-content-skill/skills/series-content-skill/showcase.html"><img src="assets/article-preview.png" alt="Original Article 9 WeChat layout demo"></a><br><sub>Original demo · Article 9</sub></td>
-    <td width="50%"><a href="https://mp.weixin.qq.com/s/H7EvFcSOqpcy-FROBv3iWg"><img src="assets/article-preview-24-thumbnail.png" alt="Article 24 body screenshot: sky blue, cream yellow, and paper-like layout"></a><br><sub>New style · Sky blue × cream yellow × paper texture</sub></td>
-  </tr>
+<tr><th width="33%">01 · Clinical Editorial 精简版</th><th width="33%">02 · 原有演示版</th><th width="33%">03 · 天空蓝 × 奶油黄</th></tr>
+<tr>
+<td valign="top"><a href="https://clairelind1.github.io/series-content-skill/skills/series-content-skill/templates/clinical-editorial.html"><img src="assets/clinical-editorial-preview.png" alt="Clinical Editorial 精简版真实HTML预览" width="100%"></a></td>
+<td valign="top"><a href="https://clairelind1.github.io/series-content-skill/examples/the-pitt-ep1-terminology-9.html"><img src="assets/article-preview.png" alt="原有演示版正文预览" width="100%"></a></td>
+<td valign="top"><a href="https://clairelind1.github.io/series-content-skill/examples/the-pitt-ep2-7-stitch.html"><img src="assets/article-preview-24-thumbnail.png" alt="天空蓝奶油黄正文预览" width="100%"></a></td>
+</tr><tr><td>当前默认 · 黑白蓝 · 轻分隔</td><td>柔和纸色 · 词条卡片</td><td>渐变 · 纸张感</td></tr>
 </table>
 
-- [Open the Grid article preview](https://clairelind1.github.io/series-content-skill/skills/series-content-skill/showcase.html)
-- [Open the project-introduction article](https://clairelind1.github.io/series-content-skill/examples/series-content-skill-intro.html)
 
-## Published articles
+**[打开交互式样式画廊 →](https://clairelind1.github.io/series-content-skill/skills/series-content-skill/showcase.html)**
 
-- [Article 1 | Opening and conversational English](https://mp.weixin.qq.com/s?__biz=Mzg2ODY0MDQ0MQ==&mid=2247484003&idx=1&sn=322c6f034dba8d2993a80e43d62d8ca4&scene=21#wechat_redirect)
-- [Article 9 | Differential diagnosis and admission](https://mp.weixin.qq.com/s?__biz=Mzg2ODY0MDQ0MQ==&mid=2247484137&idx=1&sn=adc7593300449d60e0ca8bd060d6fa24&scene=21#wechat_redirect)
-- [Article 17 | Vomiting and accidental ingestion](https://mp.weixin.qq.com/s?__biz=Mzg2ODY0MDQ0MQ==&mid=2247484211&idx=1&sn=ace509093aa2d55a8ba42343a0923f20&scene=21#wechat_redirect)
-- [Article 24 | Emergency communication and pain assessment](https://mp.weixin.qq.com/s/H7EvFcSOqpcy-FROBv3iWg)
+桌面端切换「并排比较 / 横向浏览」，手机端左右滑动；每个样式都可滚动预览正文并打开完整 HTML。
 
-## From article to publication
+| 样式 | 特点 | 入口 |
+| --- | --- | --- |
+| **01 · Clinical Editorial 精简版** | 当前默认 · 黑白蓝、留白、浅蓝例句竖线 | [预览与复制](https://clairelind1.github.io/series-content-skill/skills/series-content-skill/templates/clinical-editorial.html) |
+| 02 · 原有演示版 | 柔和纸色、词条卡片 | [完整预览](https://clairelind1.github.io/series-content-skill/examples/the-pitt-ep1-terminology-9.html) |
+| 03 · 天空蓝 × 奶油黄 | 渐变、纸张感 | [完整预览](https://clairelind1.github.io/series-content-skill/examples/the-pitt-ep2-7-stitch.html) |
 
-Open the article HTML and click “Copy formatted content.” In the [WeChat Official Account platform](https://mp.weixin.qq.com/), create an article, paste the body, fill in the article details, preview, and publish.
+[查看精简版模板规则](skills/series-content-skill/references/clinical-editorial.md)。新模板尚待微信公众号浅色、深色粘贴实测。
+
+
+
+## Start with this prompt
+
+```text
+Use $series-content-skill to turn these notes into a WeChat article.
+Audience: [who it is for]
+Tone: [natural / professional / casual]
+Layout: [choose from the previews or recommend one]
+Organize and polish the content, then generate HTML with a copy button.
+Preserve my viewpoint; do not invent experiences, facts or quotations.
+
+My notes:
+[paste here]
+```
+
+For an approved draft: “Keep the wording unchanged. Format it in this style and give me paste-ready WeChat HTML.”
+
+The Pitt medical-English series is a worked example, not a restriction on subject matter. Language-learning modules are optional.
 
 ## Download and install
 
@@ -81,14 +94,16 @@ skills/
     ├── SKILL.md
     ├── SKILL.en.md
     ├── agents/
-    └── references/
+    ├── references/
+    └── templates/
 ```
 
-Copy the `series-content-skill` folder inside `skills`, not the entire downloaded project folder. Do not add an extra nested folder with the same name. After restarting your Agent, invoke it in Codex by entering `$series-content-skill`. You can also mention `series-content-skill` in your request, for example: “Use it to turn these dialogue notes into an explained glossary.” Ask for a glossary, outline, review, or complete article.
+Copy the `series-content-skill` folder inside `skills`, not the entire downloaded project folder. Do not add an extra nested folder with the same name. After restarting your Agent, invoke it in Codex by entering `$series-content-skill`. You can also mention `series-content-skill` in your request, for example: “Use it to turn these rough notes into an article and paste-ready WeChat HTML.” Ask for a glossary, outline, review, or complete article.
 
 The Skill works from the material you provide. Keep the full repository if you also want the The Pitt case study, sample article HTML, and builder scripts.
 
 ### Preview the web demo locally
 
 From the extracted repository root, run `python -m http.server 8000` and open `http://localhost:8000/skills/series-content-skill/showcase.html`.
+
 
