@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>系列英语精读 · Clinical Editorial</title></head>
+<body style="margin:0;background:#ECEFEE;font-family:-apple-system,BlinkMacSystemFont,'PingFang SC','Helvetica Neue','Microsoft YaHei',sans-serif;">
+<section style="max-width:680px;margin:16px auto;">
+<section style="padding:12px 16px;"><button onclick="copyArticle()" style="padding:10px 18px;border:0;border-radius:980px;background:#234A5C;color:#F4ECD7;cursor:pointer;">复制到微信公众号</button><p id="status" style="font-size:12px;color:#567B8D;">复制后到公众号正文编辑区粘贴；图片需在后台上传。</p></section>
+<section id="copy-target" style="padding:18px 22px 40px;background:#FAFAF8;background-color:#FAFAF8;color:#383838;line-height:1.9;">
+<p style="margin:0 0 16px;font-size:13px;font-weight:700;letter-spacing:1px;color:#234A5C;">The Pitt 第二集 · 系列第 N 篇</p>
+<section style="padding:16px;border-left:3px solid #567B8D;background:#EEF4F6;background-color:#EEF4F6;">
+<p style="margin:0 0 8px;font-size:13px;font-weight:700;color:#234A5C;">医学英语精读 · 共 N 条</p>
+<p style="margin:0;font-size:15px;color:#525252;">在这里简要交代本篇场景和学习内容，使用自然中文，避免堆砌术语。</p></section>
+<section style="padding-top:36px;">
+<section style="padding-bottom:10px;border-bottom:1px solid #9FB7C1;">
+<p style="margin:0 0 5px;font-size:11px;letter-spacing:1.6px;color:#567B8D;">CLINICAL COMMUNICATION · 01</p>
+<p style="margin:0;font-size:23px;font-weight:700;color:#161616;">清楚易懂的场景小标题</p></section>
+<section style="padding:24px 0 14px;">
+<p style="margin:0 0 4px;font-size:11px;letter-spacing:1.4px;color:#7A8D95;">TERM 01</p>
+<p style="margin:0 0 5px;font-size:19px;font-weight:700;color:#161616;">clinical term <span style="font-size:16px;font-weight:500;color:#567B8D;">中文释义</span></p>
+<p style="margin:0 0 10px;font-size:12px;color:#888888;">/音标/</p>
+<p style="margin:0 0 10px;font-size:15px;color:#525252;">解释词义、使用场景和有价值的搭配。引用紧跟对应文段。<span style="font-size:10px;line-height:0;vertical-align:super;color:#567B8D;">[1]</span></p>
+<p style="margin:0;font-size:12px;color:#7A8D95;">补充例句</p>
+<section style="margin:12px 0 0;padding:7px 0 7px 14px;border-left:2px solid #C6D5DB;">
+<p style="margin:0 0 4px;font-size:15px;font-style:italic;color:#234A5C;">Place a contextual teaching example here.</p>
+<p style="margin:0;font-size:14px;color:#383838;">在这里放入对应中文译文。</p></section></section></section>
+<section style="margin:36px 0 0;padding-top:20px;border-top:1px solid #9FB7C1;">
+<p style="margin:0 0 12px;font-size:17px;font-weight:700;color:#161616;">参考资料</p>
+<p style="margin:0;font-size:11px;color:#666666;word-break:break-all;">[1] 机构名称 · 资料标题<br>在此填写已核实的原始链接</p></section>
+<section style="margin:40px 0 0;padding:12px 0 8px;">
+<p style="margin:0 0 12px;font-size:15px;color:#525252;">关注 <strong style="color:#234A5C;">ActiveReading</strong>，继续看《匹兹堡医护前线》台词精读。</p>
+<p style="margin:0;font-size:15px;color:#567B8D;text-align:center;">下篇文章见～</p></section>
+</section></section>
+<script>
+async function copyArticle(){
+ const target=document.getElementById('copy-target'), status=document.getElementById('status');
+ try{
+  if(navigator.clipboard&&window.ClipboardItem){
+   await navigator.clipboard.write([new ClipboardItem({'text/html':new Blob([target.outerHTML],{type:'text/html'}),'text/plain':new Blob([target.innerText],{type:'text/plain'})})]);
+  }else{
+   const range=document.createRange();range.selectNode(target);const s=window.getSelection();s.removeAllRanges();s.addRange(range);if(!document.execCommand('copy'))throw Error('copy');s.removeAllRanges();
+  }
+  status.textContent='已复制，请到公众号正文编辑区粘贴。';
+ }catch(e){
+  const range=document.createRange();range.selectNode(target);const s=window.getSelection();s.removeAllRanges();s.addRange(range);status.textContent='正文已选中，请按 Ctrl+C 复制。';
+ }
+}
+</script></body></html>
