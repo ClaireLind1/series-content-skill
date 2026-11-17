@@ -79,7 +79,13 @@
     @media(max-width:820px) { .top { padding:0 22px; } main { padding:0 22px 68px; } .hero-row { grid-template-columns:minmax(0,1.2fr) minmax(220px,.8fr); gap:28px; padding:60px 0 50px; } .steps { grid-template-columns:repeat(2,minmax(0,1fr)); margin-bottom:68px; } .preview-grid { gap:18px; } .article-frame { height:590px; } .capabilities { margin-bottom:68px; } .published-articles { margin-bottom:68px; } footer { padding-left:22px; padding-right:22px; } }
     @media(max-width:600px) { .top { min-height:58px; padding:0 18px; } .brand { font-size:9px; letter-spacing:.1em; } .top a { font-size:11px; } main { padding:0 17px 58px; } .hero-row { grid-template-columns:1fr; padding:48px 0 42px; gap:24px; margin-bottom:54px; } h1 { margin:16px 0 17px; font-size:clamp(43px,13vw,64px); } .lede { font-size:14px; line-height:1.8; } .stamp { padding:16px 18px; transform:rotate(.5deg); } .stamp strong { font-size:26px; } .section-head { display:block; padding-bottom:10px; margin-bottom:17px; } .section-head p { margin-top:6px; font-size:11px; } h2 { font-size:29px; } .steps { grid-template-columns:1fr 1fr; gap:9px; margin-bottom:62px; } .step { min-height:0; padding:14px 12px; } .step b { margin-bottom:13px; font-size:9px; } .step strong { font-size:14px; } .step p { font-size:11px; } .preview-grid { grid-template-columns:1fr; gap:17px; } .preview-card { padding:13px; } .preview-card h3 { font-size:22px; } .preview-card p { min-height:0; margin-bottom:11px; } .article-frame { height:540px; } .under { align-items:flex-start; flex-direction:column; margin-bottom:62px; } .capabilities { grid-template-columns:1fr; gap:8px; margin-bottom:62px; } .cap { grid-template-columns:75px minmax(0,1fr); gap:11px; padding:16px 13px; } .cap h3 { font-size:16px; } .cap p { font-size:11px; } .published-articles { grid-template-columns:1fr; gap:0; margin-bottom:62px; } .published-article { grid-template-columns:76px minmax(0,1fr) 15px; gap:7px; padding:13px 10px; } .published-article h3 { font-size:16px; } .published-article p { font-size:10px; } footer { padding:16px 18px 20px; gap:10px; flex-direction:column; font-size:9px; } }
   </style>
-</head>
+<style>
+.view-switch{display:flex;gap:8px;margin:24px 0}.view-switch button{border:1px solid #b9cbd1;border-radius:99px;padding:10px 18px;background:#fafaf8;color:#234a5c;cursor:pointer;font:inherit}.view-switch button[aria-pressed=true]{background:#234a5c;color:#fafaf8}
+.style-gallery{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px}.style-tile{min-width:0;border:1px solid #c9d5d8;border-radius:18px;background:#fafaf8;padding:22px;transition:transform .2s,border-color .2s}.style-tile:hover{transform:translateY(-5px);border-color:#567b8d}.style-tile:first-child{border-top:4px solid #234a5c}.tile-top{display:flex;justify-content:space-between;font:11px monospace;letter-spacing:1px;color:#567b8d}.style-tile h3{font-size:22px;line-height:1.4;margin:20px 0 8px}.style-tile>p{font-size:13px;color:#69777c;min-height:40px}.live-preview{height:470px;border:1px solid #d8dfe1;border-radius:12px;overflow:hidden;background:#edf0ee}.live-preview iframe{width:100%;height:100%;border:0;display:block}.tile-link{display:flex;justify-content:space-between;padding-top:20px;color:#234a5c;font-weight:700;text-decoration:none}.gallery-note{font-size:13px;color:#69777c;line-height:1.8;margin-top:20px}
+.style-gallery.slide{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:16px}.style-gallery.slide .style-tile{flex:0 0 390px;scroll-snap-align:start}
+@media(max-width:900px){.style-gallery{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:18px}.style-gallery .style-tile{flex:0 0 82%;scroll-snap-align:start}.view-switch{display:none}.live-preview{height:520px}}
+@media(prefers-reduced-motion:reduce){.style-tile{transition:none}}
+</style></head>
 <body>
   <header class="top"><div class="brand">从英文笔记到公众号文章</div><a href="https://github.com/ClaireLind1/series-content-skill">返回项目首页 ↗</a></header>
   <main>
@@ -100,32 +106,10 @@
       <div class="step"><b>04 / 发布到公众号</b><strong>复制排版，预览后发布</strong><p>新建图文，粘贴正文，填写标题、封面等信息；检查手机预览后，在公众号后台发布。</p></div>
     </section>
 
-    <div class="section-head"><h2>公众号文章预览</h2><p>两篇实际 HTML · 桌面并排展示 · 手机自动单列</p></div>
-    <section class="preview-grid" aria-label="公众号文章 HTML 预览">
-      <article class="preview-card">
-        <span class="preview-label">第一集 · 系列文章样式</span>
-        <h3>医学英语文章排版</h3>
-        <p>查看原有系列文章的版式与内容结构。预览框可滚动，亦可单独打开完整 HTML。</p>
-        <div class="preview-shell">
-          <div class="browser-bar"><i class="dot"></i><i class="dot"></i><i class="dot"></i><span>the-pitt-ep1-terminology-9.html</span></div>
-          <iframe class="article-frame" src="../../examples/the-pitt-ep1-terminology-9.html" title="The Pitt 系列文章 HTML 排版预览" loading="lazy"></iframe>
-        </div>
-        <a class="button preview-open" href="../../examples/the-pitt-ep1-terminology-9.html" target="_blank" rel="noopener">单独打开文章 ↗</a>
-      </article>
-      <article class="preview-card">
-        <span class="preview-label">第二集 · 第 24 篇 · 新版样式</span>
-        <h3>急诊沟通与疼痛评估</h3>
-        <p>天空蓝 × 奶油黄 × 纸张感。预览最新发布文章的完整排版，或打开公众号原文。</p>
-        <div class="preview-shell">
-          <div class="browser-bar"><i class="dot"></i><i class="dot"></i><i class="dot"></i><span>the-pitt-ep2-7-stitch.html</span></div>
-          <iframe class="article-frame" src="../../examples/the-pitt-ep2-7-stitch.html" title="第 24 篇《急诊沟通与疼痛评估》排版预览" loading="lazy"></iframe>
-        </div>
-        <a class="button preview-open" href="../../examples/the-pitt-ep2-7-stitch.html" target="_blank" rel="noopener">单独打开第 24 篇 HTML ↗</a>
-        <a class="button preview-open" href="https://mp.weixin.qq.com/s/H7EvFcSOqpcy-FROBv3iWg" target="_blank" rel="noopener">阅读公众号原文 ↗</a>
-      </article>
-    </section>
-    <div class="under"><span>展示的是可复制排版的公众号 HTML 成品，不是静态文章截图。</span><a class="button" href="../../examples/series-content-skill-intro.html" target="_blank" rel="noopener">查看推广文章 HTML ↗</a></div>
-
+<div class="section-head"><h2>选一种阅读气质</h2><p>3 种样式 · 可滚动查看正文，点击打开完整版本</p></div>
+<div class="view-switch" role="group" aria-label="画廊布局"><button type="button" onclick="setGallery('grid')" aria-pressed="true">▦ 并排比较</button><button type="button" onclick="setGallery('slide')" aria-pressed="false">↔ 横向浏览</button></div>
+<section id="style-gallery" class="style-gallery" aria-label="公众号样式画廊"><article class="style-tile"><div class="tile-top"><span>CURRENT / 01</span><span>01 / 03</span></div><h3>Clinical Editorial · 精简版</h3><p>当前默认 · 黑白蓝 / 单栏 / 轻分隔</p><div class="live-preview"><iframe src="templates/clinical-editorial.html" title="Clinical Editorial · 精简版样式预览" loading="lazy"></iframe></div><a class="tile-link" href="templates/clinical-editorial.html" target="_blank" rel="noopener">打开完整样式 <span>↗</span></a></article><article class="style-tile"><div class="tile-top"><span>CLASSIC / 02</span><span>02 / 03</span></div><h3>原有演示版</h3><p>第一集第九篇 · 柔和纸色 / 词条卡片</p><div class="live-preview"><iframe src="../../examples/the-pitt-ep1-terminology-9.html" title="原有演示版样式预览" loading="lazy"></iframe></div><a class="tile-link" href="../../examples/the-pitt-ep1-terminology-9.html" target="_blank" rel="noopener">打开完整样式 <span>↗</span></a></article><article class="style-tile"><div class="tile-top"><span>COLOR / 03</span><span>03 / 03</span></div><h3>天空蓝 × 奶油黄</h3><p>第24篇 · 渐变 / 纸张感</p><div class="live-preview"><iframe src="../../examples/the-pitt-ep2-7-stitch.html" title="天空蓝 × 奶油黄样式预览" loading="lazy"></iframe></div><a class="tile-link" href="../../examples/the-pitt-ep2-7-stitch.html" target="_blank" rel="noopener">打开完整样式 <span>↗</span></a></article></section>
+<p class="gallery-note">手机左右滑动切换样式；预览区域内可以上下滚动。当前默认模板已获用户选型确认，微信双模式粘贴实测尚待完成。</p>
     <div class="section-head" style="margin-top:76px"><h2>已发布文章精选</h2><p>第 1、9、17、24 篇 · 点击查看公众号原文</p></div>
     <section class="published-articles" aria-label="已发布文章精选">
       <a class="published-article" href="https://mp.weixin.qq.com/s?__biz=Mzg2ODY0MDQ0MQ==&amp;mid=2247484003&amp;idx=1&amp;sn=322c6f034dba8d2993a80e43d62d8ca4&amp;scene=21#wechat_redirect" target="_blank" rel="noopener"><span class="num">第一集 · 第 1 篇</span><h3>开场与口语</h3><p>《匹兹堡医护前线》第一集开场｜医学英语与口语精读 ↗</p></a>
@@ -153,7 +137,7 @@
 
   </main>
   <footer><span>剧集英语内容工作流</span><span>整理你选出的表达 · 逐条讲解 · 成文与公众号排版</span></footer>
-</body>
+<script>function setGallery(mode){document.getElementById('style-gallery').classList.toggle('slide',mode==='slide');document.querySelectorAll('.view-switch button').forEach((b,i)=>b.setAttribute('aria-pressed',String(i===(mode==='grid'?0:1))));}</script></body>
 </html>
 
 
