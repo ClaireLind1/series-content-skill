@@ -1,14 +1,10 @@
-# 从英语素材，到精读内容与公众号文章
+# 把零散笔记，变成好看的公众号文章
 
-一个把英语学习素材整理成精读讲解、学习笔记与公众号文章的 Agent Skill。可用于剧集台词、播客、访谈、演讲、文章摘录和课程笔记，按需补充词汇、发音、搭配、语境与参考资料。以下以《匹兹堡医护前线》（The Pitt）医学英语系列展示实际工作流。
+一个把零散笔记整理成微信公众号文章的 Agent Skill。支持梳理结构、润色表达、选择版式，生成可直接复制到公众号后台的 HTML。适用于读书笔记、课程记录、工作心得、知识分享和系列写作。
 
-**[打开完整网页演示 →](https://clairelind1.github.io/series-content-skill/skills/series-content-skill/showcase.html)** · [查看给 AI 加载的 Skill 指令](skills/series-content-skill/SKILL.md) · [English](README.en.md)
+**记完笔记之后，写文章、改措辞、做排版，都可以从这里开始。** 多种样式可预览，选好后直接生成；满意的版式还能留给下一篇继续用。
 
-## 它能帮你做什么
-
-- **整理台词笔记：** 逐条解释你选出的英文台词、词句或疑问，补充语境、术语、缩写、发音、中文释义和例句；无法确认的内容会标注待核实。
-- **组织文章内容：** 把逐条讲解整理成有主题和阅读顺序的系列文章；也可以只要词条清单、提纲或内容审校。
-- **生成公众号排版：** 输出 Markdown 和带「复制排版内容」按钮的 HTML，复制正文后即可粘贴到公众号图文编辑器。
+[预览排版样式](https://clairelind1.github.io/series-content-skill/skills/series-content-skill/showcase.html) · [安装方式](#下载与安装) · [Skill 指令](skills/series-content-skill/SKILL.md) · [English](README.en.md)
 
 ## 公众号样式画廊
 
@@ -34,16 +30,46 @@
 
 [查看精简版模板规则](skills/series-content-skill/references/clinical-editorial.md)。新模板尚待微信公众号浅色、深色粘贴实测。
 
-## 已发布文章精选
+
+## 从笔记到成稿
+
+| 你提供 | Skill 帮你整理 | 你拿到 |
+| --- | --- | --- |
+| 读书摘录、课程记录、工作心得或已有草稿 | 提炼主题、梳理结构、润色表达、匹配版式 | 可编辑文章和带复制按钮的公众号 HTML |
+| 已经确认的完整正文 | 保留内容，调整层次、字号、留白和强调 | 适合公众号阅读的排版稿 |
+| 系列文章和喜欢的样式 | 沿用品牌、结构和视觉规范 | 后续可继续复用的文章模板 |
+
+不需要为了使用它把笔记改成固定格式。正文复制后，标题、封面和图片仍需在公众号后台分别填写或上传。
+
+## 复制这条指令开始
+
+```text
+用 $series-content-skill，把下面的笔记整理成一篇微信公众号文章。
+读者：[写给谁看]
+语气：[自然 / 专业 / 轻松]
+样式：[从预览图中选择，或让 AI 根据内容推荐]
+请先梳理结构、润色表达，再生成带复制按钮的 HTML。
+保留我的观点，不编造经历、事实或引用。
+
+我的笔记：
+[在这里粘贴]
+```
+
+已有正文时，也可以直接说：**「正文不改，按这个样式排版，给我可复制到公众号的 HTML。」**
+
+## 实际案例：The Pitt 医学英语系列
+
+这个系列展示如何把看剧笔记整理成专业内容、补充参考资料并持续发布。它是一个使用案例，读书、工作、课程和其他知识主题也可使用；医学词条、音标和例句不会套进普通文章。
 
 - [第 1 篇｜开场与口语](https://mp.weixin.qq.com/s?__biz=Mzg2ODY0MDQ0MQ==&mid=2247484003&idx=1&sn=322c6f034dba8d2993a80e43d62d8ca4&scene=21#wechat_redirect)
 - [第 9 篇｜鉴别诊断与收治](https://mp.weixin.qq.com/s?__biz=Mzg2ODY0MDQ0MQ==&mid=2247484137&idx=1&sn=adc7593300449d60e0ca8bd060d6fa24&scene=21#wechat_redirect)
 - [第 17 篇｜呕吐与误食](https://mp.weixin.qq.com/s?__biz=Mzg2ODY0MDQ0MQ==&mid=2247484211&idx=1&sn=ace509093aa2d55a8ba42343a0923f20&scene=21#wechat_redirect)
 - [第 24 篇｜急诊沟通与疼痛评估](https://mp.weixin.qq.com/s/H7EvFcSOqpcy-FROBv3iWg)
 
+
 ## 从文章到发布
 
-打开文章 HTML，点击「复制排版内容」；在[微信公众号后台](https://mp.weixin.qq.com/)新建图文并粘贴正文，填写标题等图文信息，预览确认后发布。
+打开文章 HTML，点击「复制到微信公众号」；在[微信公众号后台](https://mp.weixin.qq.com/)新建图文并粘贴正文，填写标题、封面等信息，检查手机预览后发布。Skill 不会自动发布文章。
 
 ## 下载与安装
 
@@ -91,10 +117,11 @@ skills/
     ├── SKILL.md
     ├── SKILL.en.md
     ├── agents/
-    └── references/
+    ├── references/
+    └── templates/
 ```
 
-注意：复制 `skills` 里面的 `series-content-skill` 文件夹，不是整个下载的项目文件夹；不要多套一层同名文件夹。重启 Agent 后，Codex 可输入 `$series-content-skill` 调用。也可以在请求里提到 `series-content-skill`，例如：「用它整理这些英文台词，输出逐条讲解清单。」你可以要求它只做词条清单、提纲、审校或完整文章。
+注意：复制 `skills` 里面的 `series-content-skill` 文件夹，不是整个下载的项目文件夹；不要多套一层同名文件夹。重启 Agent 后，Codex 可输入 `$series-content-skill` 调用。也可以在请求里提到 `series-content-skill`，例如：「用它把这些零散笔记整理成文章，并生成公众号排版 HTML。」你可以要求它只做笔记整理、提纲、润色、排版或完整文章。
 
 单独安装 Skill 文件夹即可处理你提供的材料。若还要查看 The Pitt 案例、文章 HTML 和生成脚本，请保留整个下载的项目文件夹。
 
