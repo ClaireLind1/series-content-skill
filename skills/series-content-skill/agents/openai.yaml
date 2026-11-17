@@ -1,6 +1,6 @@
 interface:
-  display_name: "剧集英语内容工作台"
-  short_description: "整理剧集英语笔记，生成学习文章与公众号 HTML"
-  default_prompt: "整理我选出的剧集英语表达，解释语境和用法；需要时写成文章并生成公众号 HTML。"
+  display_name: "笔记成文与公众号排版"
+  short_description: "把读书、课程和工作笔记整理成文章，选择样式并生成可复制的公众号 HTML"
+  default_prompt: "用 $series-content-skill 把这些笔记整理、润色成文章，并生成带复制按钮的微信公众号 HTML。"
 policy:
   allow_implicit_invocation: true
