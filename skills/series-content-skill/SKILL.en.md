@@ -1,70 +1,21 @@
 ---
 name: series-content-skill
 description: >-
-  Turn user-selected English dialogue, expressions, viewing notes, or questions from a TV or film
-  into contextual explanations, language-learning articles, and WeChat-ready HTML. Use for
-  planning, terminology notes, drafting, reviewing, or requested learning extras.
+  Turn rough notes, reading excerpts, course notes, work reflections or drafts into polished articles and paste-ready WeChat HTML. Use for note-to-article writing, editing, WeChat formatting and reusable series layouts.
 ---
 
-# Series English Content Studio
+# Notes to Articles and WeChat Layouts
 
-## Purpose
+Work from the user's notes, excerpts, drafts or requested sources. Support reading, courses, work, knowledge sharing and series writing without requiring a fixed input format.
 
-Help users turn English material they selected while watching a series or film into clear,
-context-rich Chinese learning content and, when requested, long-form articles for a WeChat Official
-Account. Users choose what is worth organizing. Notes may be exact lines, approximate transcriptions,
-expressions, words, or questions in any format. Never imply that the Skill watches episodes, discovers
-unknown lines, or retrieves subtitles that were not provided.
+Match scope: preserve approved text for layout-only requests; provide an outline or review when requested; produce a complete article or usable HTML when requested. Preserve the user's viewpoint and voice. Do not invent facts, experiences, statistics or quotations.
 
-Explain each selected item in context and add useful terminology, pronunciation, collocations, Chinese
-explanations, or original teaching examples as appropriate. Create an outline or article only when
-requested. Generate WeChat HTML with a “Copy formatted content” button when a suitable renderer is
-available. Quizzes and answer keys are optional, never default deliverables.
+Organize content before styling. Reuse approved branding and layouts. Otherwise choose a layout appropriate to length and structure. Start from [the bundled template](templates/clinical-editorial.html), reading [its layout rules](references/clinical-editorial.md) before use. Replace topic labels, entry structure, brand and follow text for the user's project. Medical terms, phonetics and teaching examples are conditional language-learning features, not general requirements.
 
-## Repository example
+For HTML, use inline styles, a single column up to 680px and system fonts. Keep a rich-text copy button outside the article, supporting HTML/plain text and manual fallback. Confirm asset paths. Explain that local copying does not automatically upload images or fill title, cover and other article fields. Users preview and publish in WeChat themselves; do not claim publication or light/dark paste validation without evidence.
 
-This repository demonstrates the workflow with *The Pitt*, a medical drama. Its sample article,
-medical terminology, data, and renderer are specific examples, not assumptions for other shows. For
-other series, use the user's material and adapt the examples only as structural or visual references.
+Verify specialist claims when needed and place sources by the supported passages, with original URLs in references. Distinguish quotations, paraphrases and authored examples. Language-learning work may include meanings, pronunciation and collocations when useful.
 
-- `examples/pitt_t07_layout.py` — sample layout and Markdown/HTML helpers.
-- `examples/pitt_ep1_17_data.py` and `examples/pitt_ep1_10_data.py` — sample content data.
-- `examples/build-the-pitt-ep1-10-html.py` — sample article builder.
-- `examples/the-pitt-ep1-terminology-9.html` — rendered article example.
-- Root `AGENTS.md` — project rules for the sample assets.
+The Pitt is one medical-English case study. Its facts and branding are not defaults for other topics. Its approved November 18, 2026 minimal editorial layout remains the series choice. Do not overwrite published articles.
 
-## Modes
-
-- **Plan:** return an angle, context to establish, outline, useful language, and verification items.
-- **Explain:** organize the user's selected notes one by one; keep uncertain wording marked as such.
-- **Draft:** arrange approved explanations for the requested audience and scope. Distinguish source
-  dialogue, paraphrase, and original teaching examples.
-- **Review:** check context, terms, translation, quotation status, flow, and series consistency.
-- **Extras:** create only the quiz or answer explanation requested.
-
-Do not turn planning, explanation, or proofreading into a full article unless requested.
-
-## WeChat delivery
-
-For HTML deliverables, tell the user to open the file, click “Copy formatted content,” sign in at
-`https://mp.weixin.qq.com/`, create a new article, paste the body, fill in title/author/summary/cover
-separately, preview, save as a draft, and publish when ready. Copying the body does not fill in metadata
-or upload a cover. This workflow does not require an API or third-party layout plugin.
-
-Read [the editorial workflow](references/editorial-workflow.en.md) when detailed guidance is needed.
-For The Pitt samples, follow root `AGENTS.md`; for other shows, do not import show-specific facts or
-content.
-
-## Evidence and accuracy
-
-1. Quote dialogue verbatim only when supplied by the user or verified from a reliable source. Label
-   paraphrases and approximate transcriptions accurately; mark unresolved wording for verification.
-2. Explain language in context and register. Add terminology and domain details when they help.
-3. Verify specialized factual claims as needed. Medical explanations are educational context, not
-   clinical guidance.
-4. Never invent plot, dialogue, or facts to bridge gaps.
-5. Preserve approved content during layout changes and report unresolved checks clearly.
-6. Do not claim WeChat editor paste validation without testing it.
-
-Deliver only what the user asked for: explanations, an outline, an article, WeChat HTML, review notes,
-or requested derivatives. Add builders and content data when the project workflow needs them.
+See [the editorial workflow](references/editorial-workflow.en.md). Bundled templates work without repository examples after standalone installation. Add quizzes, downloads, advertising placeholders or other extras only when requested. Do not default to ActiveReading for an unspecified account.
