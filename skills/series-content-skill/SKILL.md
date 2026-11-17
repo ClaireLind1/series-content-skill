@@ -29,6 +29,11 @@ description: >-
 - `examples/build-the-pitt-ep1-10-html.py`：案例 HTML 生成脚本。
 - `examples/the-pitt-ep1-terminology-9.html`：实际文章 HTML 样例。
 
+
+## 当前 The Pitt 公众号模板（2026-11-18）
+
+The Pitt 后续文章使用用户确认的 **Clinical Editorial 精简版**。生成前阅读 [版式规则](references/clinical-editorial.md)，以 [可复制 HTML 模板](templates/clinical-editorial.html) 为结构起点。旧 examples 样例作为历史参考，不覆盖本次版式选择。其他剧集按用户选择应用，品牌与关注文案随项目替换。
+
 ## 公众号交付
 
 如果交付文章 HTML，说明用户可以打开文件并点击「复制排版内容」，然后登录 `https://mp.weixin.qq.com/`，新建图文并粘贴正文。标题、作者、摘要和封面等图文信息需在后台分别填写；预览后可保存草稿，准备好时再发布。
