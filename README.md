@@ -129,4 +129,8 @@ skills/
 
 在解压后的仓库根目录运行 `python -m http.server 8000`，再打开 `http://localhost:8000/skills/series-content-skill/showcase.html`。
 
+## 动态公众号排版演示
 
+[HTML Demo 源码](examples/series-content-skill-motion-demo.html) · [浏览器演示](https://clairelind1.github.io/series-content-skill/examples/series-content-skill-motion-demo.html) · [公众号发布实例](https://mp.weixin.qq.com/s/h5naCMFbx-TzYq2GBfMqdg)
+
+演示包含 SVG 动态开场和三张可横滑的样式预览。也可以下载仓库，在浏览器打开示例 HTML。发布到公众号时，截图建议从后台上传，动画与横滑效果以手机预览为准。
