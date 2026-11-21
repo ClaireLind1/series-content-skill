@@ -11,14 +11,14 @@
 <table>
 <tr><th width="33%">01 · Clinical Editorial 精简版</th><th width="33%">02 · 原有演示版</th><th width="33%">03 · 天空蓝 × 奶油黄</th></tr>
 <tr>
-<td valign="top"><a href="https://clairelind1.github.io/series-content-skill/skills/series-content-skill/templates/clinical-editorial.html"><img src="assets/clinical-editorial-preview.png" alt="Clinical Editorial 精简版真实HTML预览" width="100%"></a></td>
-<td valign="top"><a href="https://clairelind1.github.io/series-content-skill/examples/the-pitt-ep1-terminology-9.html"><img src="assets/article-preview.png" alt="原有演示版正文预览" width="100%"></a></td>
-<td valign="top"><a href="https://clairelind1.github.io/series-content-skill/examples/the-pitt-ep2-7-stitch.html"><img src="assets/article-preview-24-thumbnail.png" alt="天空蓝奶油黄正文预览" width="100%"></a></td>
+<td valign="top"><a href="https://clairelind1.github.io/series-content-skill/skills/series-content-skill/templates/clinical-editorial.html"><img src="assets/gallery-01-clinical-editorial.png" alt="Clinical Editorial 精简版真实HTML预览" width="100%"></a></td>
+<td valign="top"><a href="https://clairelind1.github.io/series-content-skill/examples/the-pitt-ep1-terminology-9.html"><img src="assets/gallery-02-paper-cards.png" alt="原有演示版正文预览" width="100%"></a></td>
+<td valign="top"><a href="https://clairelind1.github.io/series-content-skill/examples/the-pitt-ep2-7-stitch.html"><img src="assets/gallery-03-sky-blue.png" alt="天空蓝奶油黄正文预览" width="100%"></a></td>
 </tr><tr><td>当前默认 · 黑白蓝 · 轻分隔</td><td>柔和纸色 · 词条卡片</td><td>渐变 · 纸张感</td></tr>
 </table>
 
 
-**[打开交互式样式画廊 →](https://clairelind1.github.io/series-content-skill/skills/series-content-skill/showcase.html)**
+**[打开交互式样式画廊 →](https://clairelind1.github.io/series-content-skill/skills/series-content-skill/showcase.html)** · **[打开荧光拼贴动态演示 →](https://clairelind1.github.io/series-content-skill/examples/series-content-skill-motion-demo.html)**
 
 桌面端切换「并排比较 / 横向浏览」，手机端左右滑动；每个样式都可滚动预览正文并打开完整 HTML。
 
@@ -27,6 +27,7 @@
 | **01 · Clinical Editorial 精简版** | 当前默认 · 黑白蓝、留白、浅蓝例句竖线 | [预览与复制](https://clairelind1.github.io/series-content-skill/skills/series-content-skill/templates/clinical-editorial.html) |
 | 02 · 原有演示版 | 柔和纸色、词条卡片 | [完整预览](https://clairelind1.github.io/series-content-skill/examples/the-pitt-ep1-terminology-9.html) |
 | 03 · 天空蓝 × 奶油黄 | 渐变、纸张感 | [完整预览](https://clairelind1.github.io/series-content-skill/examples/the-pitt-ep2-7-stitch.html) |
+| 04 · 荧光拼贴动态版 | 荧光黄绿、粉色胶带、SVG 动态开场与横滑图集 | [在线演示](https://clairelind1.github.io/series-content-skill/examples/series-content-skill-motion-demo.html) · [源码](examples/series-content-skill-motion-demo.html) |
 
 [查看精简版模板规则](skills/series-content-skill/references/clinical-editorial.md)。新模板尚待微信公众号浅色、深色粘贴实测。
 
