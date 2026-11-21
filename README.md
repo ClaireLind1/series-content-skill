@@ -9,28 +9,28 @@
 ## 公众号样式画廊
 
 <table>
-<tr><th width="25%">01 · Clinical Editorial 精简版</th><th width="25%">02 · 原有演示版</th><th width="25%">03 · 天空蓝 × 奶油黄</th><th width="25%">04 · 荧光拼贴动态版</th></tr>
+<tr><th width="25%">01 · Clinical Editorial 精简版</th><th width="25%">02 · 柔和纸色 · 词条卡片</th><th width="25%">03 · 天空蓝 × 奶油黄</th><th width="25%">04 · 荧光拼贴动态版</th></tr>
 <tr>
-<td valign="top"><a href="https://clairelind1.github.io/series-content-skill/skills/series-content-skill/templates/clinical-editorial.html"><img src="assets/gallery-01-clinical-editorial.png" alt="Clinical Editorial 精简版真实HTML预览" width="100%"></a></td>
-<td valign="top"><a href="https://clairelind1.github.io/series-content-skill/examples/the-pitt-ep1-terminology-9.html"><img src="assets/gallery-02-paper-cards.png" alt="原有演示版正文预览" width="100%"></a></td>
-<td valign="top"><a href="https://clairelind1.github.io/series-content-skill/examples/the-pitt-ep2-7-stitch.html"><img src="assets/gallery-03-sky-blue.png" alt="天空蓝奶油黄正文预览" width="100%"></a></td>
-<td valign="top"><a href="https://clairelind1.github.io/series-content-skill/examples/series-content-skill-motion-demo.html"><img src="assets/gallery-04-neon-motion.svg" alt="荧光拼贴动态版预览" width="100%"></a></td>
+<td valign="top"><a href="https://clairelind1.github.io/series-content-skill/skills/series-content-skill/showcase.html#style-01"><img src="assets/gallery-01-clinical-editorial.png" alt="Clinical Editorial 精简版真实HTML预览" width="100%"></a></td>
+<td valign="top"><a href="https://clairelind1.github.io/series-content-skill/skills/series-content-skill/showcase.html#style-02"><img src="assets/gallery-02-paper-cards.png" alt="柔和纸色 · 词条卡片正文预览" width="100%"></a></td>
+<td valign="top"><a href="https://clairelind1.github.io/series-content-skill/skills/series-content-skill/showcase.html#style-03"><img src="assets/gallery-03-sky-blue.png" alt="天空蓝奶油黄正文预览" width="100%"></a></td>
+<td valign="top"><a href="https://clairelind1.github.io/series-content-skill/skills/series-content-skill/showcase.html#style-04"><img src="assets/gallery-04-neon-motion.svg" alt="荧光拼贴动态版预览" width="100%"></a></td>
 </tr><tr><td>当前默认 · 黑白蓝 · 轻分隔</td><td>柔和纸色 · 词条卡片</td><td>渐变 · 纸张感</td><td>荧光黄绿 · SVG 动态开场</td></tr>
 </table>
 
 
-**[打开交互式样式画廊 →](https://clairelind1.github.io/series-content-skill/skills/series-content-skill/showcase.html)** · **[打开荧光拼贴动态演示 →](https://clairelind1.github.io/series-content-skill/examples/series-content-skill-motion-demo.html)**
+**[打开交互式样式画廊 →](https://clairelind1.github.io/series-content-skill/skills/series-content-skill/showcase.html)**
 
 桌面端切换「并排比较 / 横向浏览」，手机端左右滑动；每个样式都可滚动预览正文并打开完整 HTML。
 
 | 样式 | 特点 | 入口 |
 | --- | --- | --- |
-| 01 · Clinical Editorial 精简版 | 当前默认 · 黑白蓝、留白、浅蓝例句竖线 | [查看预览](https://clairelind1.github.io/series-content-skill/skills/series-content-skill/templates/clinical-editorial.html) |
-| 02 · 原有演示版 | 柔和纸色、词条卡片 | [查看预览](https://clairelind1.github.io/series-content-skill/examples/the-pitt-ep1-terminology-9.html) |
-| 03 · 天空蓝 × 奶油黄 | 渐变、纸张感 | [查看预览](https://clairelind1.github.io/series-content-skill/examples/the-pitt-ep2-7-stitch.html) |
-| 04 · 荧光拼贴动态版 | 荧光黄绿、粉色胶带、SVG 动态开场与横滑图集 | [查看预览](https://clairelind1.github.io/series-content-skill/examples/series-content-skill-motion-demo.html) |
+| 01 · Clinical Editorial 精简版 | 当前默认 · 黑白蓝、留白、浅蓝例句竖线 | [查看预览](https://clairelind1.github.io/series-content-skill/skills/series-content-skill/showcase.html#style-01) |
+| 02 · 柔和纸色 · 词条卡片 | 柔和纸色、词条卡片 | [查看预览](https://clairelind1.github.io/series-content-skill/skills/series-content-skill/showcase.html#style-02) |
+| 03 · 天空蓝 × 奶油黄 | 渐变、纸张感 | [查看预览](https://clairelind1.github.io/series-content-skill/skills/series-content-skill/showcase.html#style-03) |
+| 04 · 荧光拼贴动态版 | 荧光黄绿、粉色胶带、SVG 动态开场与横滑图集 | [查看预览](https://clairelind1.github.io/series-content-skill/skills/series-content-skill/showcase.html#style-04) |
 
-[查看精简版模板规则](skills/series-content-skill/references/clinical-editorial.md)。新模板尚待微信公众号浅色、深色粘贴实测。
+[查看精简版模板规则](skills/series-content-skill/references/clinical-editorial.md)。新模板尚待微信公众号浅色、深色粘贴实测。 [公众号发布实例](https://mp.weixin.qq.com/s/h5naCMFbx-TzYq2GBfMqdg)
 
 
 ## 从笔记到成稿
@@ -131,8 +131,3 @@ skills/
 
 在解压后的仓库根目录运行 `python -m http.server 8000`，再打开 `http://localhost:8000/skills/series-content-skill/showcase.html`。
 
-## 动态公众号排版演示
-
-[HTML Demo 源码](examples/series-content-skill-motion-demo.html) · [浏览器演示](https://clairelind1.github.io/series-content-skill/examples/series-content-skill-motion-demo.html) · [公众号发布实例](https://mp.weixin.qq.com/s/h5naCMFbx-TzYq2GBfMqdg)
-
-演示包含 SVG 动态开场和三张可横滑的样式预览。也可以下载仓库，在浏览器打开示例 HTML。发布到公众号时，截图建议从后台上传，动画与横滑效果以手机预览为准。
